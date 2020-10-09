@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>VehiclesController</servlet-name>
+        <servlet-class>com.fullstack888.carrenting.controller.VehiclesController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VehiclesServletRemover</servlet-name>
+        <servlet-class>com.fullstack888.carrenting.controller.VehiclesServletRemover</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VehiclesServletInserter</servlet-name>
+        <servlet-class>com.fullstack888.carrenting.controller.VehiclesServletInserter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VehiclesServletEditer</servlet-name>
+        <servlet-class>com.fullstack888.carrenting.controller.VehiclesServletEditer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VehiclesController</servlet-name>
+        <url-pattern>/vehicles</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VehiclesServletRemover</servlet-name>
+        <url-pattern>/vehicleRemover</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VehiclesServletInserter</servlet-name>
+        <url-pattern>/vehicleInserter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VehiclesServletEditer</servlet-name>
+        <url-pattern>/vehicleEditor</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
