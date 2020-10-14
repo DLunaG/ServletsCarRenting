@@ -14,6 +14,7 @@
     
     
     <body>
+        <%@ include file="/WEB-INF/layout/menu.jsp" %>
         <% HttpSession mySession = request.getSession(false);
         String deleteMsg = String.valueOf(mySession.getAttribute("deleteMsg"));
         %>

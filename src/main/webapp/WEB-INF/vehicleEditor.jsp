@@ -14,6 +14,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%@ include file="/WEB-INF/layout/menu.jsp" %>
         <% HttpSession mySession = request.getSession(false);
         Vehicle vehicle = (Vehicle)mySession.getAttribute("vehicle");
         %>

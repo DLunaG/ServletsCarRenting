@@ -1,6 +1,6 @@
 package com.fullstack888.carrenting.services;
 
-import com.fullstack888.carrenting.DAO.DAO;
+import com.fullstack888.carrenting.DAO.VehicleDAO;
 import com.fullstack888.carrenting.domain.Vehicle;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,10 +11,10 @@ import java.util.stream.Collectors;
  */
 public class CarRentingService {
     
-    DAO dao;
+    VehicleDAO dao;
     
     public CarRentingService(){
-        this.dao = new DAO();
+        this.dao = new VehicleDAO();
     }
     
     public List<Vehicle> getAllVehicles(){

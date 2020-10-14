@@ -14,6 +14,7 @@
     
     
     <body>
+        <%@ include file="/WEB-INF/layout/menu.jsp" %>
         <h1><u>Fill the inserter vehicle form, please.</u></h1>
         <form action="/CarRenting/vehicleInserter" method="post">
             

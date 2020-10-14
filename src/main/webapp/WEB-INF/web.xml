@@ -16,6 +16,10 @@
         <servlet-name>VehiclesServletEditer</servlet-name>
         <servlet-class>com.fullstack888.carrenting.controller.VehiclesServletEditer</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.fullstack888.carrenting.controller.LoginServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>VehiclesController</servlet-name>
         <url-pattern>/vehicles</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>VehiclesServletEditer</servlet-name>
         <url-pattern>/vehicleEditor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -12,11 +12,11 @@ import java.util.List;
  *
  * @author DanielLuna
  */
-public class DAO {
+public class VehicleDAO {
     
     Connection cn;
     
-    public DAO(){
+    public VehicleDAO(){
         try{
         Class.forName("org.postgresql.Driver");
         this.cn = java.sql.DriverManager.getConnection("jdbc:postgresql://localhost/rentingcar", "postgres", "1234");

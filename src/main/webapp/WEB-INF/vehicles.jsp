@@ -14,6 +14,7 @@
         <title>RentingCar List</title>
     </head>
     <body>
+        <%@include file="/WEB-INF/layout/menu.jsp" %>
         <form>
            
             <% HttpSession mySession = request.getSession(false);
@@ -47,10 +48,6 @@
                     </tr>               
             <%};%>
             </table>
-            <h1> </h1>
-            <a href="http://localhost:8080/CarRenting/vehicleInserter">Insert a new vehicle</a>
-            <h1> </h1>
-            <a href="http://localhost:8080/CarRenting/">Back to main menu</a>
         </form>
     </body>
 </html>
